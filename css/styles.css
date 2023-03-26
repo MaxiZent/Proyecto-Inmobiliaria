@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica";
+}
+
+a {
+    color: orangered;
+}
+
+header {
+    background-color: black;
+}
+
+.card {
+    margin: 20px;
+    border-color: aqua;
+    padding: 10px;
+    align-items: center;
+}
+
+
+.container {
+    border-color: aquamarine;
+    text-align: center;
+    display: flex;
+    padding: 20px;
+}
