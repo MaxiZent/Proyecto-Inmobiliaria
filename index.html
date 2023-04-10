@@ -5,33 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Inmobiliaria Zent</title>
 </head>
 
 <body>
-    <header>
-        <img src="./img/logo.svg" alt="logo bienes raices">
-        <nav>
-            <a href="./index.html">Inicio</a>
-            <a href="#seccion-nosotros">Nosotros</a>
-            <a href="#seccion-anuncios">Anuncios</a>
-            <a href="#seccion-contacto">Contacto</a>
-            <a href="#seccion-blog">Blog</a>
-        </nav>
-    </header>
+    <section id="header">
+        <header>
+            <img src="./img/logo.svg" alt="logo bienes raices">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="#seccion-nosotros"><i class="fa-solid fa-house"></i>Nosotros</a></li>
+                    <li><a href="#seccion-anuncios"><i class="fa-solid fa-newspaper"></i>Anuncios</a></li>
+                    <li><a href="#seccion-contacto"><i class="fa-solid fa-address-card"></i>Contacto</a></li>
+                    <li><a href="#seccion-blog"><i class="fa-solid fa-list"></i>Blog</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <h1>Venta de Casas y Departamentos Exclusivos</h1>
-    <p>Exclusivos de Lujo</p>
+        <section id="banner">
+            <div>
+                <h1>Venta de Casas y Departamentos Exclusivos</h1>
+                <p>Exclusivos de Lujo</p>
+            </div>
+        </section>
+    </section>
 
-    <section>
+    <section id="seccionNosotros">
+        <a name="seccion-nosotros"></a>
+        <h2>Nosotros</h2>
         <div class="container">
-            <a name="seccion-nosotros"></a>
-            <h2>Sobre Nosotros</h2>
-            <div class="card">
+            <div class="item">
                 <img src="./img/icono1.svg" alt="">
                 <div>
                     <h3>SEGURIDAD</h3>
+                    <hr>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vitae quo eligendi adipisci quas
                         illum
@@ -42,10 +55,11 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="item">
                 <img src="./img/icono2.svg" alt="">
                 <div>
                     <h3>EL MEJOR PRECIO</h3>
+                    <hr>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vitae quo eligendi adipisci quas
                         illum
@@ -56,10 +70,11 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="item">
                 <img src="./img/icono3.svg" alt="">
                 <div>
                     <h3>A TIEMPO</h3>
+                    <hr>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vitae quo eligendi adipisci quas
                         illum
@@ -73,46 +88,53 @@
         <a href="./pages/nosotros.html">Más Sobre Nosotros</a>
     </section>
 
-    <main>
+    <main id="seccionAnuncios">
         <a name="seccion-anuncios"></a>
-        <iframe width="760" height="315" src="https://www.youtube.com/embed/f882_nq4ebw?autoplay=1"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-        </iframe>
-        <h2>Casas y Depas en Venta</h2>
+        <h2>Casas y Dptos en Venta</h2>
+        <div class="anuncioContainer">
+            <div class="anuncios">
+                <img src="./img/anuncio1.jpg" alt="">
+                <div>
+                    <h3>Casa de Lujo en el Lago</h3>
+                    <p>Casa en el lago con excelente vista, acabados de lujo, a un excelente precio.</p>
+                    <p>$3.000.000</p>
+                    <p>3 3 2</p>
+                    <a href="./pages/anuncio1.html">VER PROPIEDAD</a>
+                </div>
+            </div>
 
-        <img src="./img/anuncio1.jpg" alt="">
-        <h3>Casa de Lujo en el Lago</h3>
-        <p>Casa en el lago con excelente vista, acabados de lujo, a un excelente precio.</p>
-        <p>$3.000.000</p>
-        <p>3 3 2</p>
-        <a href="./pages/anuncio1.html">VER PROPIEDAD</a>
+            <div class="anuncios">
+                <img src="./img/anuncio2.jpg" alt="">
+                <div>
+                    <h3>Casa terminados de Lujo</h3>
+                    <p>Casa con diseño moderno, así como tecnología inteligente, y amueblada.</p>
+                    <p>$2.000.000</p>
+                    <p>3 2 2</p>
+                    <a href="./pages/anuncio2.html">VER PROPIEDAD</a>
+                </div>
+            </div>
 
-        <h3>Casa terminados de Lujo</h3>
-        <img src="./img/anuncio2.jpg" alt="">
-        <p>Casa con diseño moderno, así como tecnología inteligente, y amueblada.</p>
-        <p>$2.000.000</p>
-        <p>3 2 2</p>
-        <a href="./pages/anuncio2.html">VER PROPIEDAD</a>
-
-        <h3>Casa con Piscina</h3>
-        <img src="./img/anuncio3.jpg" alt="">
-        <p>Casa con piscina y acabados de lujo en la ciudad, excelente oportunidad</p>
-        <p>$2.500.000</p>
-        <p>3 2 3</p>
-        <a href="./pages/anuncio3.html">VER PROPIEDAD</a>
-
-        <a href="./pages/anuncios.html">VER TODAS LAS PROPIEDADES</a>
-
+            <div class="anuncios">
+                <img src="./img/anuncio3.jpg" alt="">
+                <div>
+                    <h3>Casa con Piscina</h3>
+                    <p>Casa con piscina y acabados de lujo en la ciudad, excelente oportunidad</p>
+                    <p>$2.500.000</p>
+                    <p>3 2 3</p>
+                    <a href="./pages/anuncio3.html">VER PROPIEDAD</a>
+                </div>
+            </div>
+            <a href="./pages/anuncios.html">VER TODAS LAS PROPIEDADES</a>
+        </div>
     </main>
 
-    <section>
+    <section id="seccionContacto">
         <a name="seccion-contacto"></a>
-        <h2>Encuentra la casa de tus sueños</h2>
-        <p> Llena el formulario de Contacto y un asesor se pondrá en contacto contigo a la brevedad</p>
-        <img src="./img/encuentra.jpg" alt="">
-        <a href="./pages/contacto.html">CONTÁCTANOS</a>
+        <div class="contacto">
+            <h2>Encuentra la casa de tus sueños</h2>
+            <p> Llena el formulario de Contacto y un asesor se pondrá en contacto contigo a la brevedad</p>
+            <a href="./pages/contacto.html">CONTÁCTANOS</a>
+        </div>
     </section>
 
 
@@ -146,16 +168,20 @@
         Carla Fernández.
     </section>
 
-    <footer style="background-color: blueviolet;">
+    <footer>
         <nav>
-            <a href="./index.html"></a>
-            <a href="#seccion-nosotros">Nosotros</a>
-            <a href="#seccion-anuncios">Anuncios</a>
-            <a href="#seccion-contacto">Contacto</a>
-            <a href="#seccion-blog">Blog</a>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="#seccion-nosotros"><i class="fa-solid fa-house"></i>Nosotros</a></li>
+                <li><a href="#seccion-anuncios"><i class="fa-solid fa-newspaper"></i>Anuncios</a></li>
+                <li><a href="#seccion-contacto"><i class="fa-solid fa-address-card"></i>Contacto</a></li>
+                <li><a href="#seccion-blog"><i class="fa-solid fa-list"></i>Blog</a></li>
+            </ul>
         </nav>
-        <p>Todos los Derechos Reservados &copy; Maxi Centurion</p>
+        <p>&copy; Zent &copy; Todos los derechos reservados. 2023</p>
     </footer>
+
+    <script src="https://kit.fontawesome.com/7a421ca7e9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
