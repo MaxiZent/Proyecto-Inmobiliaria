@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,29 +14,25 @@
 </head>
 
 <body>
-    <section id="header">
-        <header>
-            <img src="./img/logo.svg" alt="logo bienes raices">
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="#seccion-nosotros"><i class="fa-solid fa-house"></i>Nosotros</a></li>
-                    <li><a href="#seccion-anuncios"><i class="fa-solid fa-newspaper"></i>Anuncios</a></li>
-                    <li><a href="#seccion-contacto"><i class="fa-solid fa-address-card"></i>Contacto</a></li>
-                    <li><a href="#seccion-blog"><i class="fa-solid fa-list"></i>Blog</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section id="banner">
-            <div>
-                <h1>Venta de Casas y Departamentos Exclusivos</h1>
-                <p>Exclusivos de Lujo</p>
+    <header>
+        <div class="contenedor headerContenido">
+            <div class="headerMenu">
+                <img src="./img/logo.svg" alt="logo bienes raices">
+                <nav>
+                    <ul>
+                        <li><a href="#seccion-nosotros"><i class="fa-solid fa-house"></i> Nosotros</a></li>
+                        <li><a href="#seccion-anuncios"><i class="fa-solid fa-newspaper"></i> Anuncios</a></li>
+                        <li><a href="#seccion-contacto"><i class="fa-solid fa-address-card"></i> Contacto</a></li>
+                        <li><a href="#seccion-blog"><i class="fa-solid fa-list"></i> Blog</a></li>
+                    </ul>
+                </nav>
             </div>
-        </section>
-    </section>
+            <h1>Venta de Casas y Departamentos Exclusivos</h1>
+        </div>
+    </header>
 
-    <section id="seccionNosotros">
+
+    <section id="seccionNosotros" class="contenedor">
         <a name="seccion-nosotros"></a>
         <h2>Nosotros</h2>
         <div class="container">
@@ -85,55 +81,79 @@
                 </div>
             </div>
         </div>
-        <a href="./pages/nosotros.html">Más Sobre Nosotros</a>
+        <div class="nosotros-boton">
+            <a class="boton boton-en-linea fondo-color-secundario" href="./pages/nosotros.html">Más Sobre Nosotros</a>
+        </div>
     </section>
 
-    <main id="seccionAnuncios">
+    <main>
         <a name="seccion-anuncios"></a>
-        <h2>Casas y Dptos en Venta</h2>
-        <div class="anuncioContainer">
-            <div class="anuncios">
-                <img src="./img/anuncio1.jpg" alt="">
-                <div>
-                    <h3>Casa de Lujo en el Lago</h3>
-                    <p>Casa en el lago con excelente vista, acabados de lujo, a un excelente precio.</p>
-                    <p>$3.000.000</p>
-                    <p>3 3 2</p>
-                    <a href="./pages/anuncio1.html">VER PROPIEDAD</a>
+        <div class="contenedor">
+            <h2>Casas y Dptos en Venta</h2>
+            <div class="mainContenido">
+                <div class="anuncios">
+                    <img src="./img/anuncio1.jpg" alt="">
+                    <div class="anunciosContenido">
+                        <h3>Casa de Lujo en el Lago</h3>
+                        <p>Casa en el lago con excelente vista, acabados de lujo, a un excelente precio.</p>
+                        <p class="anunciosPrecio">$3.000.000</p>
+                        <p>3 3 2</p>
+                        <ul>
+                            <li><i class="fa-solid fa-toilet"></i> 3</li>
+                            <li><i class="fa-solid fa-car"></i> 3</li>
+                            <li><i class="fa-solid fa-bed"></i> 2</li>
+                        </ul>
+                        <a class="boton fondo-color-primario" href="./pages/anuncio1.html">VER PROPIEDAD</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="anuncios">
-                <img src="./img/anuncio2.jpg" alt="">
-                <div>
-                    <h3>Casa terminados de Lujo</h3>
-                    <p>Casa con diseño moderno, así como tecnología inteligente, y amueblada.</p>
-                    <p>$2.000.000</p>
-                    <p>3 2 2</p>
-                    <a href="./pages/anuncio2.html">VER PROPIEDAD</a>
+                <div class="anuncios">
+                    <img src="./img/anuncio2.jpg" alt="">
+                    <div class="anunciosContenido">
+                        <h3>Casa terminados de Lujo</h3>
+                        <p>Casa con diseño moderno, así como tecnología inteligente, y amueblada.</p>
+                        <p class="anunciosPrecio">$2.000.000</p>
+                        <p>3 2 2</p>
+                        <ul>
+                            <li><i class="fa-solid fa-toilet"></i> 3</li>
+                            <li><i class="fa-solid fa-car"></i> 3</li>
+                            <li><i class="fa-solid fa-bed"></i> 2</li>
+                        </ul>
+                        <a class="boton fondo-color-primario" href="./pages/anuncio2.html">VER PROPIEDAD</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="anuncios">
-                <img src="./img/anuncio3.jpg" alt="">
-                <div>
-                    <h3>Casa con Piscina</h3>
-                    <p>Casa con piscina y acabados de lujo en la ciudad, excelente oportunidad</p>
-                    <p>$2.500.000</p>
-                    <p>3 2 3</p>
-                    <a href="./pages/anuncio3.html">VER PROPIEDAD</a>
+                <div class="anuncios">
+                    <img src="./img/anuncio3.jpg" alt="">
+                    <div class="anunciosContenido">
+                        <h3>Casa con Piscina</h3>
+                        <p>Casa con piscina y acabados de lujo en la ciudad, excelente oportunidad</p>
+                        <p class="anunciosPrecio">$2.500.000</p>
+                        <p>3 2 3</p>
+                        <ul>
+                            <li><i class="fa-solid fa-toilet"></i> 3</li>
+                            <li><i class="fa-solid fa-car"></i> 3</li>
+                            <li><i class="fa-solid fa-bed"></i> 2</li>
+                        </ul>
+                        <a class="boton fondo-color-primario" href="./pages/anuncio3.html">VER PROPIEDAD</a>
+                    </div>
+                </div>
+                <div class="anunciosBoton">
+                    <a class="boton boton-en-linea fondo-color-secundario" href="./pages/anuncios.html">VER TODAS LAS
+                        PROPIEDADES</a>
                 </div>
             </div>
-            <a href="./pages/anuncios.html">VER TODAS LAS PROPIEDADES</a>
         </div>
     </main>
 
     <section id="seccionContacto">
         <a name="seccion-contacto"></a>
-        <div class="contacto">
-            <h2>Encuentra la casa de tus sueños</h2>
+        <div class="contenedor contacto">
+            <h2 id="encuentra">Encuentra la casa de tus sueños</h2>
             <p> Llena el formulario de Contacto y un asesor se pondrá en contacto contigo a la brevedad</p>
-            <a href="./pages/contacto.html">CONTÁCTANOS</a>
+            <div>
+                <a class="boton boton-en-linea fondo-color-primario" href="./pages/contacto.html">CONTÁCTANOS</a>
+            </div>
         </div>
     </section>
 
@@ -169,16 +189,17 @@
     </section>
 
     <footer>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="#seccion-nosotros"><i class="fa-solid fa-house"></i>Nosotros</a></li>
-                <li><a href="#seccion-anuncios"><i class="fa-solid fa-newspaper"></i>Anuncios</a></li>
-                <li><a href="#seccion-contacto"><i class="fa-solid fa-address-card"></i>Contacto</a></li>
-                <li><a href="#seccion-blog"><i class="fa-solid fa-list"></i>Blog</a></li>
-            </ul>
-        </nav>
-        <p>&copy; Zent &copy; Todos los derechos reservados. 2023</p>
+        <div class="contenedor footerContenido">
+            <nav>
+                <ul>
+                    <li><a href="#seccion-nosotros"><i class="fa-solid fa-house"></i>Nosotros</a></li>
+                    <li><a href="#seccion-anuncios"><i class="fa-solid fa-newspaper"></i>Anuncios</a></li>
+                    <li><a href="#seccion-contacto"><i class="fa-solid fa-address-card"></i>Contacto</a></li>
+                    <li><a href="#seccion-blog"><i class="fa-solid fa-list"></i>Blog</a></li>
+                </ul>
+            </nav>
+            <p>&copy; Zent &copy; Todos los derechos reservados. 2023</p>
+        </div>
     </footer>
 
     <script src="https://kit.fontawesome.com/7a421ca7e9.js" crossorigin="anonymous"></script>

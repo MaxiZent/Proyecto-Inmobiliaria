@@ -12,87 +12,108 @@ html {
     color: black;
 }
 
-body {
-    background-color: grey;
-}
-
 ul,
 ol {
     list-style-type: none;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
 }
 
 a {
     text-decoration: none;
 }
 
-/* fin reset*/
-
-nav ul {
-
+p {
+    line-height: 2;
 }
 
-nav ul li a {
-    text-decoration: none;
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em 0;
 }
 
-nav a {
-    color: white;
-    padding: 10px;
-    display: flex;
-}
-
-nav a:nth-child() {
+.boton {
+    color: orange;
+    font-weight: 700;
+    padding: 1rem 3rem;
     display: block;
+    margin: 0.5rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.boton-en-linea {
+    display: inline-block;
 }
 
 /*HEADER*/
 
-#header {
+header {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/header.jpg);
     background-size: cover;
     background-position: center center;
-    height: 100vh;
 }
 
-.contenidoHeader {}
+.headerContenido {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-#header nav ul {
+.headerMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
     list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    flex-wrap: wrap;
 }
-#header nav ul a {
+
+nav a {
+    font-size: 16px;
     text-decoration: none;
     color: #fff;
-    margin: 0 12px;
+    margin-right: 10px;
     font-weight: 400;
     transition: .5s;
 }
 
-#header nav ul a:hover {
+nav a:hover {
     color: orange;
-
 }
 
-#banner h1 {
-    font-size: 30px;
-    color: #fff;
-}
-
-#banner p {
-    color: #fff;
-    font-size: 20px;
+.headerContenido h1 {
+    font-size: 2rem;
+    color: white;
+    max-width: 30rem;
 }
 
 /*SECCION NOSOTROS*/
 #seccionNosotros {
-    background-color: #f3f3f3;
     text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #seccionNosotros h2 {
-    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
     text-decoration: underline;
@@ -104,32 +125,26 @@ nav a:nth-child() {
 .container {
     display: flex;
     justify-content: center;
-    max-width: 1100px;
-    margin: 20px auto;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .item {
-    width: 350px;
-    height: 350px;
-    margin: 20px;
+    width: 20rem;
     background-color: #fff;
-    padding: 30px;
-    margin: 0 5px;
+    margin: 1.5rem;
     border-radius: 10px;
     transition: 0.5s;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.52);
 }
-
-.item:hover {
-    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
-}
-
 .item img {
-    margin: 15px;
+    margin: 1rem 0;
 }
 
 .item h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
+    font-weight: 550;
 }
 
 .item hr {
@@ -137,17 +152,24 @@ nav a:nth-child() {
     margin: auto;
     color: black;
     margin-bottom: 20px;
+}
 
+.nosotros-boton {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 1rem;
 }
 
 /*SECCION ANUNCIOS*/
 
-#seccionAnuncios {
-    background-color: #f3f3f3;
+main {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: space-between;
 }
 
-#seccionAnuncios h2 {
+main h2 {
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
@@ -157,11 +179,49 @@ nav a:nth-child() {
     text-decoration-thickness: 3px;
 }
 
-.anunciosContainer {
+.mainContenido {
     display: flex;
-    justify-content: center;
-    max-width: 1100px;
-    margin: 20px auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.anuncios {
+    width: 21.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background-color: #F5F5F5;
+    border: 1px solid #D3D3D3;
+    margin-bottom: 1rem;
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.52);
+}
+
+.anunciosContenido {
+    padding: 1rem;
+}
+
+.anunciosContenido h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.anunciosPrecio {
+    font-weight: 700;
+}
+
+.anunciosContenido ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.anunciosContenido i {
+    margin-right: 1rem;
+}
+
+.anunciosBoton {
+    text-align: right;
 }
 
 /*SECCION CONTACTO*/
@@ -169,31 +229,39 @@ nav a:nth-child() {
 #seccionContacto {
     background: url(../img/encuentra.jpg);
     background-size: cover;
-    background-position: center center;
-    height: 50vh;
+}
+
+.contacto {
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .contacto h2 {
     font-size: 30px;
     color: #fff;
-
 }
 
 .contacto p {
     color: #fff;
 }
 
-.contacto a {}
+/*SECCION FOOTER*/
 
 footer {
-    display: flex;
     background-color: #000;
     color: #fff;
-    text-align: center;
-    padding: 30px 0;
 }
 
-footer p {
-    color: aqua;
-    justify-content: flex-end;
+.footerContenido {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footerContenido i {
+    margin: 0.3rem;
 }
